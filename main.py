@@ -1,4 +1,4 @@
-from ProjetoPythonVerificaBrasil.cpfcnpj import CpfCnpj
+from cpfcnpj import CpfCnpj
 
 
 
