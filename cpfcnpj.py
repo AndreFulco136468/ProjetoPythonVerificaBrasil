@@ -1,9 +1,9 @@
 from validate_docbr import CPF, CNPJ
-
-
-
 class Documento:
+    """
+    Class Documento
     
+    """    
     
     @staticmethod
     def cria_documento(documento):
@@ -14,10 +14,22 @@ class Documento:
         else:
             raise ValueError('Documento invalido')
         
+        """
+        Adicionando decorador @staticmethod, responsável por não permitir acesso a outras funções da classe, de toda a classe só quem pode startar é a função cuja precede o decorador @staticmethod
+        Ela analisa e inicia asclasses de acordo com o tamanho do numero fornecido
+        
+        """
+        
         
 class DocCpf:
     
     def __init__(self, documento):
+        
+        """
+        Classe Construtor
+        :param documento: Valor fornecido pelo usuário string
+        
+        """
         self.cpf = documento
         self.valida()
         
