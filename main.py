@@ -1,4 +1,4 @@
-from cpfcnpj import CpfCnpj
+from cpfcnpj import Documento
 
 
 
@@ -7,7 +7,9 @@ cpr = '04136204418'
 tipo1 = "CNPJ"
 
 
-teste = CpfCnpj(cnpj, tipo1)
+teste = Documento.cria_documento("04136204418")
+
+
 print(teste)
 # teste
 
