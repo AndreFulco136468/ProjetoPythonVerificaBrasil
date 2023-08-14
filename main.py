@@ -1,8 +1,10 @@
-from datas_br import DataCadastro
+from cep_br import CepBr
+import re
 
 
-hoje =  DataCadastro()
+cep = 78056071
 
-print(hoje.tempo_de_cadastro())
-
+cep_objeto = CepBr(cep)
+bairro, localidade = cep_objeto.Acesso_cep()
+print(bairro, localidade)
 
